@@ -7,9 +7,6 @@
 "player",
 ]]
 script = ExtResource( 2 )
-__meta__ = {
-"_edit_group_": true
-}
 
 [node name="PlayerSprite" type="Sprite" parent="." groups=[
 "player",
@@ -21,7 +18,7 @@ texture = ExtResource( 1 )
 [node name="BulletPoint" type="Node2D" parent="." groups=[
 "player",
 ]]
-position = Vector2( 15.4, 0 )
+position = Vector2( 27.7835, -0.71348 )
 
 [node name="Camera2D" type="Camera2D" parent="." groups=[
 "player",
@@ -33,12 +30,14 @@ smoothing_enabled = true
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." groups=[
 "player",
 ]]
-polygon = PoolVector2Array( -10.0329, 7.98029, -9.88296, -10.1565, -1.48909, -15.8523, 7.65423, -16.0022, 21.8938, -2.36215, 15.8982, 2.43434, 6.03947, 14.292, 0.228111, 14.4858 )
+position = Vector2( 0.184025, -0.552076 )
+polygon = PoolVector2Array( -10.0329, 7.98029, -9.88296, -10.1565, -1.48909, -15.8523, 7.65423, -16.0022, 20.4824, -2.33566, 15.8982, 2.43434, 6.03947, 14.292, 0.228111, 14.4858 )
 
 [node name="Area2D" type="Area2D" parent="." groups=[
 "player",
 ]]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
-polygon = PoolVector2Array( -9.62966, 7.56418, -1.72191, 14.1163, 5.73398, 14.1163, 21.7754, -2.377, 7.54147, -15.9332, -1.27003, -16.1591, -9.8556, -9.83289 )
+position = Vector2( 0.36805, -0.552076 )
+polygon = PoolVector2Array( -9.62966, 7.56418, -1.72191, 14.1163, 5.73398, 14.1163, 20.5362, -2.09783, 7.54147, -15.9332, -1.27003, -16.1591, -9.8556, -9.83289 )
 [connection signal="area_entered" from="Area2D" to="." method="_on_Area2D_area_entered"]
